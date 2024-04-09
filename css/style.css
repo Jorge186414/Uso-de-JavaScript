@@ -1,3 +1,17 @@
-body{
-    background: #013217;
+body {
+    background: #A7FFEB;
+
+}
+
+.content {
+    margin: 0 auto;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #1DE9B6;
+    border-color: #1DE9B6;
+    margin: 1em;
 }
