@@ -57,3 +57,33 @@ const objetos = () => {
     laptop.tam_pantalla = ("15.2 pulgadas")
     console.log(laptop)
 }
+
+const calcularTiempo = () => {
+    let minutos_atleta_1 = parseInt(prompt("Minutos del atleta 1: "))
+    let segundos_atleta_1 = parseInt(prompt("Segundos del atleta 1: "))
+    if (segundos_atleta_1 > 59) {
+        alert("Segundos del atleta 1 no validos, ingresar un valor valido")
+        let segundos_atleta_1 = parseInt(prompt("Segundos del atleta 1: "))
+    }
+
+    let minutos_atleta_2 = parseInt(prompt("Minutos del atleta 2: "))
+    let segundos_atleta_2 = parseInt(prompt("Segundos del atleta 2: "))
+    if (segundos_atleta_2 > 59) {
+        alert("Segundos del atleta 2 no validos, ingresar un valor valido")
+        let segundos_atleta_2 = parseInt(prompt("Segundos del atleta 2: "))
+    }
+    
+    let minutos = minutos_atleta_1 + minutos_atleta_2
+    if (minutos > 59) {
+        let horas = minutos / 60
+        let minutos_restantes = minutos % 60
+        console.log(`Minutos a sumar ${minutos_restantes}
+        Horas: ${horas}`)
+    }
+    let segundos = segundos_atleta_1 + segundos_atleta_2
+    if (segundos > 59) {
+        let segundos_sumados = segundos / 60
+    }
+    
+    console.log(`Tiempo total: ${minutos}`)
+}

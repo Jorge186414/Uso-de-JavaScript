@@ -1,17 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #A7FFEB;
 
 }
 
 .content {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titulo{
+    margin: 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 70px;
     border-radius: 10px;
-    background-color: #1DE9B6;
-    border-color: #1DE9B6;
+    background-color: #64FFDA;
+    border-color: #64FFDA;
     margin: 1em;
+    color: #004D40;
 }
