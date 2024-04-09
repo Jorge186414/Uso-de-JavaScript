@@ -7,6 +7,13 @@ function calcular_Promedio() {
     var call2 = parseInt(prompt("Calificacoin de Lenguajes y automatas: "));
     let call3 = parseInt(prompt("Calificacion de Ingenieria de Softwware: "));
 
+    const PI = 3.14
+    const IVA = 16
+    const GRAVEDAD = 9.8
+
+    PI = 3.15
+    console.log(`Valor de PI es ${PI}`)
+
     var call2 = 70;
     if (true) {
         let call1 = 0;
