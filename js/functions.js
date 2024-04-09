@@ -11,7 +11,6 @@ function calcular_Promedio() {
     const IVA = 16
     const GRAVEDAD = 9.8
 
-    PI = 3.15
     console.log(`Valor de PI es ${PI}`)
 
     var call2 = 70;
