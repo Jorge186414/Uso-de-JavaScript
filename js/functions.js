@@ -14,7 +14,8 @@ function calcular_Promedio() {
     }
 
     let promedio = (call1 + call2 + call3) / 3;
-    alert("Tu promedio es: " + promedio);
+    // Imprimiendo utilizando Template String
+    alert(`Tu promedio es: ${promedio} continuar con la ${call1}, ${call2}, ${call3}`);
 }
 
 const confirmar = () => {
