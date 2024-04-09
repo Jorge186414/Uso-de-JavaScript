@@ -16,7 +16,7 @@ function calcular_Promedio() {
     var call2 = 70;
     if (true) {
         let call1 = 0;
-        alert ("Calificacion 1 dentro del scope del if es de: " + call1)
+        alert("Calificacion 1 dentro del scope del if es de: " + call1)
     }
 
     let promedio = (call1 + call2 + call3) / 3;
@@ -32,3 +32,28 @@ const confirmar = () => {
         alert("Felicidades, pero aun no termina el semestre ...");
     }
 };
+
+const objetos = () => {
+    const laptop = {
+        marca: "Lenovo",
+        procesador: "Intel Core i5",
+        ram: "32GB",
+        almacenamiento: "1 TB",
+        usos: ["Jugar", "Programar", "Escuchar musica", "Trabajar"],
+        tipo_disco: "SSD"
+    }
+
+    // Imprimir los valores del objeto
+    console.log(laptop)
+    // Imprimir un valor en especifico del objeto
+    console.log(`Marca: ${laptop.marca}
+    Procesador: ${laptop.procesador}
+    Memoria Ram: ${laptop.ram}
+    Tipo de Almacenamiento: ${laptop.tipo_disco}
+    Almacenamiento: ${laptop.almacenamiento}
+    Usos: ${laptop.usos}`)
+
+    // Agregar un elemento al objejo
+    laptop.tam_pantalla = ("15.2 pulgadas")
+    console.log(laptop)
+}
