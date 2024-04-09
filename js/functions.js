@@ -9,4 +9,13 @@ function calcular_Promedio() {
     
     let promedio = (call1 + call2 + call3) / 3
     alert("Tu promedio es: " + promedio)
+} 
+
+const confirmar = () => {
+    let respueta = confirm("Vas a recursar Programacion Web?")
+    if (respueta) {
+        alert("Animo! Que existe el verano :)")
+    } else {
+        alert("Felicidades, pero aun no termina el semestre ...")
+    }
 }
