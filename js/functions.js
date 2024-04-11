@@ -86,6 +86,29 @@ const calcularTiempo = () => {
         segundos = segundos % 60
     }
 
-    console.log(`${horas}:${minutos}:${segundos}`)
+    // Formatear numeros para la impresion
+    var horas_formateadas
+    var minutos_formateados
+    var segundos_formateados
+    // Formateo de horas
+    if (horas < 10) {
+        horas_formateadas = '0' + horas.toString()
+    } else {
+        horas_formateadas = horas.toString()
+    }
+    // Formateo de minutos
+    if (minutos < 10) {
+        minutos_formateados = '0' + minutos.toString()
+    } else {
+        minutos_formateados = minutos.toString()
+    }
+    // Formateo de segundos
+    if (segundos < 10) {
+        segundos_formateados = '0' + segundos.toString()
+    } else {
+        segundos_formateados = segundos.toString()
+    }
+
+    console.log(`${horas_formateadas}:${minutos_formateados}:${segundos_formateados}`)
 
 }
