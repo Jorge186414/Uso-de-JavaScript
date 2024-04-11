@@ -109,6 +109,8 @@ const calcularTiempo = () => {
         segundos_formateados = segundos.toString()
     }
 
+    var impresion = (`${horas_formateadas}:${minutos_formateados}:${segundos_formateados}`)
+    document.getElementById("print").innerHTML = (`Tiempo total: ${impresion}`)
     console.log(`${horas_formateadas}:${minutos_formateados}:${segundos_formateados}`)
 
 }
