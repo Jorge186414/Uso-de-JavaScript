@@ -125,3 +125,44 @@ const calcularTiempo = () => {
     console.log(`${horas_formateadas}:${minutos_formateados}:${segundos_formateados}`)
 
 }
+
+const destructurar_ojeto = () => {
+    const tienda_cosmeticos = {
+        nombreTienda: "Cosmeticos AlmaGaby S.A de C.V",
+        redes_sociales: {
+            facebook: "https://cosmeticos.almagaby.facebook.com",
+            instagram: "https://cosmeticos.almagaby.instragram.com",
+            x: "https://cosmeticos.almagaby.x"
+        },
+        contactos: {
+            whatsapp: "1234567890",
+            email: ["cosmsticos.almagaby@gmail.com", "almagaby-cosmeticos@outlook.com"]
+        },
+        perfumes: {
+            mujeres: {
+                perfume1: {
+                    nombre: "Dialitos",
+                    precio: "800",
+                    tamanio: "50ml"
+                },
+                perfume2: {
+                    nombre: "Chanel No.5",
+                    precio: "2500",
+                    tamanio: "250"
+                }
+            },
+            hombres: {
+                perfume1: {
+                    nombre: "Red 360 Perri Ellies",
+                    precio: "1200",
+                    tamanio: "100ml"
+                },
+                perfume2: {
+                    nombre: "212 Carolina Herrera",
+                    precio: "1400",
+                    tamanio: "100ml"
+                }
+            }
+        }
+    }
+}
