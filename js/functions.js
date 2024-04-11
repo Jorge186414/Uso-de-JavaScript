@@ -126,7 +126,7 @@ const calcularTiempo = () => {
 
 }
 
-const destructurar_ojeto = () => {
+const destructurar_objeto = () => {
     const tienda_cosmeticos = {
         nombreTienda: "Cosmeticos AlmaGaby S.A de C.V",
         redes_sociales: {
