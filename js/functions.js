@@ -59,18 +59,29 @@ const objetos = () => {
 }
 
 const calcularTiempo = () => {
-    let minutos_atleta_1 = parseInt(prompt("Minutos del atleta 1: "))
-    let segundos_atleta_1 = parseInt(prompt("Segundos del atleta 1: "))
-    if (segundos_atleta_1 > 59) {
-        alert("Segundos del atleta 1 no validos, ingresar un valor valido")
-        let segundos_atleta_1 = parseInt(prompt("Segundos del atleta 1: "))
+    var minutos_atleta_1 = parseInt(prompt("Minutos del atleta 1: "))
+
+    if (minutos_atleta_1 <= 0) {
+        alert("Minutos del atleta 1 no validos, ingresar un valor valido")
+        minutos_atleta_1 = parseInt(prompt("Minutos del atleta 1: "))
     }
 
-    let minutos_atleta_2 = parseInt(prompt("Minutos del atleta 2: "))
-    let segundos_atleta_2 = parseInt(prompt("Segundos del atleta 2: "))
-    if (segundos_atleta_2 > 59) {
+    var segundos_atleta_1 = parseInt(prompt("Segundos del atleta 1: "))
+
+    if (segundos_atleta_1 < 0 || segundos_atleta_1 > 59) {
+        alert("Segundos del atleta 1 no validos, ingresar un valor valido")
+        segundos_atleta_1 = parseInt(prompt("Segundos del atleta 1: "))
+    }
+
+    var minutos_atleta_2 = parseInt(prompt("Minutos del atleta 2: "))
+    if (minutos_atleta_2 <= 0) {
+        alert("Minutos del atleta 2 no validos, ingresar un valor valido")
+        minutos_atleta_2 = parseInt(prompt("Minutos del atleta 2: "))
+    }
+    var segundos_atleta_2 = parseInt(prompt("Segundos del atleta 2: "))
+    if (segundos_atleta_2 < 0 || segundos_atleta_2 > 59) {
         alert("Segundos del atleta 2 no validos, ingresar un valor valido")
-        let segundos_atleta_2 = parseInt(prompt("Segundos del atleta 2: "))
+        segundos_atleta_2 = parseInt(prompt("Segundos del atleta 2: "))
     }
 
     var minutos = minutos_atleta_1 + minutos_atleta_2
