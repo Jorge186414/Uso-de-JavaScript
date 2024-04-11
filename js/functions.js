@@ -72,18 +72,20 @@ const calcularTiempo = () => {
         alert("Segundos del atleta 2 no validos, ingresar un valor valido")
         let segundos_atleta_2 = parseInt(prompt("Segundos del atleta 2: "))
     }
-    
-    let minutos = minutos_atleta_1 + minutos_atleta_2
+
+    var minutos = minutos_atleta_1 + minutos_atleta_2
+    var segundos = segundos_atleta_1 + segundos_atleta_2
+    var horas = 0
     if (minutos > 59) {
-        let horas = minutos / 60
-        let minutos_restantes = minutos % 60
-        console.log(`Minutos a sumar ${minutos_restantes}
-        Horas: ${horas}`)
+        horas = horas + Math.floor(minutos / 60)
+        minutos = (minutos % 60)
     }
-    let segundos = segundos_atleta_1 + segundos_atleta_2
+
     if (segundos > 59) {
-        let segundos_sumados = segundos / 60
+        minutos = minutos + Math.floor(segundos / 60)
+        segundos = segundos % 60
     }
-    
-    console.log(`Tiempo total: ${minutos}`)
+
+    console.log(`${horas}:${minutos}:${segundos}`)
+
 }
